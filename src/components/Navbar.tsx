@@ -78,7 +78,7 @@ const Navbar = () => {
 
       {toogle ? (
         <div
-          className={`absolute z-10 top-0  right-0 left-0 bottom-0 bg-white p-4 transition-all duration-300 ease-in-out`}
+          className={`fixed z-10 top-0  right-0 left-0 bottom-0 bg-white p-4 transition-all  duration-300 ease-in-out block tablet:hidden`}
         >
           <div className="flex items-center justify-between pt-2">
             <Link onClick={() => setToogle(false)} href={'/'}>
