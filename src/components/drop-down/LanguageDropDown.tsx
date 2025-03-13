@@ -25,7 +25,13 @@ function LanguageDropDown() {
         onClick={() => setDropDown(true)}
       >
         {isSelect.toUpperCase()}
-        <Image priority alt="lang" width={20} height={20} src={'/UZ.svg'} />
+        <Image
+          priority
+          alt="lang"
+          width={20}
+          height={20}
+          src={`/${isSelect.toUpperCase()}.svg`}
+        />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         onInteractOutside={() => setDropDown(false)}
