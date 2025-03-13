@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
         <Link className="hidden tablet:block" href={'#'}>
           <Button className="text-white transition duration-200 bg-[#00359E] hover:bg-[#00359ee9]">
-            Qo'llanma
+            Qo&apos;llanma
           </Button>
         </Link>
       </div>
