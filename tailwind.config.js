@@ -20,7 +20,7 @@ module.exports = {
       },
       colors: {},
       screens: {
-        tablet: '830px',
+        tablet: '900px',
       },
     },
   },

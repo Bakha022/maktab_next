@@ -12,7 +12,6 @@ import { Button } from './ui/button';
 import Logo from '/public/logo.svg';
 const Navbar = () => {
   const [toogle, setToogle] = useState<boolean>(false);
-  console.log(toogle);
 
   return (
     <nav className="py-6 flex justify-between items-center">
@@ -28,6 +27,7 @@ const Navbar = () => {
         <li>
           <Link
             className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+            onClick={() => setToogle(false)}
             href={'#news'}
           >
             Yangiliklar
@@ -36,6 +36,7 @@ const Navbar = () => {
         <li>
           <Link
             className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+            onClick={() => setToogle(false)}
             href={'#statistika'}
           >
             Statistika
@@ -44,6 +45,7 @@ const Navbar = () => {
         <li>
           <Link
             className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+            onClick={() => setToogle(false)}
             href={'#links'}
           >
             Foydali havolalar
@@ -78,8 +80,8 @@ const Navbar = () => {
         <div
           className={`absolute z-10 top-0  right-0 left-0 bottom-0 bg-white p-4 transition-all duration-300 ease-in-out`}
         >
-          <div className="flex items-center justify-between pt-4">
-            <Link href={'/'}>
+          <div className="flex items-center justify-between pt-2">
+            <Link onClick={() => setToogle(false)} href={'/'}>
               <Image priority src={Logo} alt="logo" width={112} />
             </Link>
             <X onClick={() => setToogle(false)} size={24} />
@@ -89,6 +91,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+                  onClick={() => setToogle(false)}
                   href={'#news'}
                 >
                   Yangiliklar
@@ -97,6 +100,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+                  onClick={() => setToogle(false)}
                   href={'#statistika'}
                 >
                   Statistika
@@ -105,6 +109,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+                  onClick={() => setToogle(false)}
                   href={'#links'}
                 >
                   Foydali havolalar
@@ -113,6 +118,7 @@ const Navbar = () => {
               <li>
                 <Link
                   className="font-inter font-semibold leading-6 text-base text-gray-600 hover:text-gray-900"
+                  onClick={() => setToogle(false)}
                   href={'#contact'}
                 >
                   Kontakt
