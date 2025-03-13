@@ -75,7 +75,9 @@ const Navbar = () => {
       {/* responsive Navbar */}
 
       {toogle ? (
-        <div className="absolute z-10 top-0 right-0 left-0 bottom-0 bg-white p-4">
+        <div
+          className={`absolute z-10 top-0  right-0 left-0 bottom-0 bg-white p-4 transition-all duration-300 ease-in-out`}
+        >
           <div className="flex items-center justify-between pt-4">
             <Link href={'/'}>
               <Image priority src={Logo} alt="logo" width={112} />
