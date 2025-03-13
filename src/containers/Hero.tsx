@@ -30,11 +30,11 @@ const Hero = () => {
           height={640}
         />
         <Image
-          className="block tablet:hidden"
+          className="block tablet:hidden w-full"
           priority
           src={imgRes}
           alt="hero-img"
-          width={'100%'}
+          width={0}
           height={640}
         />
       </div>
