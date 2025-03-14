@@ -57,7 +57,7 @@ const Chart = () => {
               }}
               tickCount={5}
               dataKey={'value'}
-              domain={['auto', dataMax => dataMax * 1.2]}
+              domain={['auto', (dataMax: number) => dataMax * 1.2]}
               tick={{
                 fontSize: '12px',
                 fontWeight: '400',
