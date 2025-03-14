@@ -21,7 +21,7 @@ const data = [
 
 const Chart = () => {
   return (
-    <div>
+    <div className="border px-3 py-4 rounded-2xl sm:p-0 sm:border-none">
       <div
         style={{
           height: 243,

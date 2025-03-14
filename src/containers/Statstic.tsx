@@ -11,7 +11,7 @@ import {
 
 const Statstic = () => {
   return (
-    <div className="my-16 flex flex-col gap-16">
+    <div className="my-16 flex flex-col gap-10 sm:gap-16">
       <Explanation
         title={'Bizni aniq sonlarimiz bilan tanishing'}
         subtitle={'Statistika'}
