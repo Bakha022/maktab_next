@@ -10,27 +10,24 @@ import {
 } from 'recharts';
 
 const data = [
-  { name: 'Jan', value: 100000 },
-  { name: 'Feb', value: 120000 },
-  { name: 'Mar', value: 180000 },
-  { name: 'Apr', value: 160000 },
-  { name: 'May', value: 140000 },
-  { name: 'Jun', value: 170000 },
-  { name: 'Jul', value: 200000 },
+  { name: 'Jan', value: 0 },
+  { name: 'Feb', value: 50 },
+  { name: 'Mar', value: 100 },
+  { name: 'Apr', value: 70 },
+  { name: 'May', value: 150 },
+  { name: 'Jun', value: 200 },
+  { name: 'Jul', value: 180 },
 ];
 
 const Chart = () => {
   return (
     <div>
-      <div>
-        
-      </div>
       <div
         style={{
-          // width: '100%',
           height: 243,
           display: 'flex',
           justifyContent: 'center',
+          width: '100%',
         }}
       >
         <ResponsiveContainer width="100%" height="100%">
@@ -48,9 +45,26 @@ const Chart = () => {
               tickLine={false}
             />
             <YAxis
+              label={{
+                value: 'Aktiv foydalanuvchilar',
+                angle: -90,
+                position: 'center',
+                fontSize: 12,
+                fill: '#475467',
+                dx: -20,
+                fontWeight: '500',
+                fontFamily: 'Inter',
+              }}
               tickCount={5}
+              dataKey={'value'}
               domain={['auto', dataMax => dataMax * 1.2]}
-              hide
+              tick={{
+                fontSize: '12px',
+                fontWeight: '400',
+                fontFamily: 'Inter',
+              }}
+              axisLine={false}
+              tickLine={false}
             />
             <Tooltip cursor={false} content={<CustomTooltip />} />
 
@@ -74,18 +88,18 @@ const CustomTooltip = ({ active, payload }) => {
     return (
       <div
         style={{
-          background: 'white',
-          padding: '12px',
+          background: '#00359E',
+          padding: '8px 12px',
           borderRadius: '8px',
           boxShadow: '0px 4px 10px rgba(0,0,0,0.1)',
           textAlign: 'center',
         }}
       >
-        <p className="text-[#C7C7C7] text-sm font-normal font-inter leading-5">
+        {/* <p className="text-[#C7C7C7] text-sm font-normal font-inter leading-5">
           15 Aug 2022
-        </p>
-        <p className="text-base font-inter font-medium leading-6">
-          {payload[0].value.toLocaleString()} so’m
+        </p> */}
+        <p className="text-[12px] font-inter font-semibold leading-4.5 text-white">
+          {payload[0].value.toLocaleString()} foydalanuvchi
         </p>
       </div>
     );

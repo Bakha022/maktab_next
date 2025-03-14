@@ -20,8 +20,8 @@ const UIcard = ({ img, title, subtitle, data }: IProp) => {
           alt={title}
         />
       </Link>
-      <div className="flex flex-col h-[164px] mt-6 justify-between">
-        <h3 className="font-inter font-semibold text-2xl leading-8 line-clamp-2 min-h-[56px]">
+      <div className="flex flex-col h-auto gap-3 sm:h-[164px] mt-6 justify-between">
+        <h3 className="font-inter font-semibold text-xl sm:text-2xl leading-[30px] sm:leading-8 line-clamp-2 h-auto sm:min-h-[56px]">
           {title}
         </h3>
         <p className="font-inter font-normal text-base leading-6 text-gray-600">
