@@ -8,6 +8,7 @@ import {
   TooltipProps,
   XAxis,
   YAxis,
+  DotProps
 } from 'recharts';
 
 const data = [
@@ -69,9 +70,10 @@ const Chart = () => {
             />
             <Tooltip
               cursor={false}
-              content={props => <CustomTooltip {...props} />}
+              content={props => (
+                <CustomTooltip {...(props as TooltipProps<number, string>)} />
+              )}
             />
-
             <Line
               type="monotone"
               dataKey="value"
@@ -111,8 +113,8 @@ const CustomTooltip: React.FC<TooltipProps<number, string>> = ({
   return null;
 };
 
-const CustomActiveDot = props => {
-  const { cx, cy } = props;
+
+const CustomActiveDot: React.FC<DotProps> = ({ cx = 0, cy = 0 }) => {
   return (
     <g>
       {/* Vertikal Shaffof Gradient */}
@@ -129,7 +131,7 @@ const CustomActiveDot = props => {
         x={cx - 10}
         y={cy - 40}
         width={20}
-        height={248 - cy}
+        height={Math.max(248 - cy, 0)}
         fill="url(#customGradient)"
         rx="4"
       />
@@ -139,4 +141,4 @@ const CustomActiveDot = props => {
   );
 };
 
-export default Chart;
+export default CustomActiveDot;
