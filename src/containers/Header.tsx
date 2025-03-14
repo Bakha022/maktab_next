@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-import Heroxport from './Hero';
+import Heroexport from './Hero';
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       className="bg-center bg-cover bg-no-repeat"
     >
       <Navbar />
-      <Heroxport />
+      <Heroexport />
     </div>
   );
 };

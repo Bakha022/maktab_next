@@ -8,9 +8,10 @@ import {
   TooltipProps,
   XAxis,
   YAxis,
-  DotProps
 } from 'recharts';
 
+import CustomActiveDot from './CustomActiveDot';
+import CustomTooltip from './CustomTooltip';
 const data = [
   { name: 'Jan', value: 0 },
   { name: 'Feb', value: 50 },
@@ -89,56 +90,4 @@ const Chart = () => {
   );
 };
 
-const CustomTooltip: React.FC<TooltipProps<number, string>> = ({
-  active,
-  payload,
-}) => {
-  if (active && payload && payload.length) {
-    return (
-      <div
-        style={{
-          background: '#00359E',
-          padding: '8px 12px',
-          borderRadius: '8px',
-          boxShadow: '0px 4px 10px rgba(0,0,0,0.1)',
-          textAlign: 'center',
-        }}
-      >
-        <p className="text-[12px] font-inter font-semibold leading-4.5 text-white">
-          {payload[0].value.toLocaleString()} foydalanuvchi
-        </p>
-      </div>
-    );
-  }
-  return null;
-};
-
-
-const CustomActiveDot: React.FC<DotProps> = ({ cx = 0, cy = 0 }) => {
-  return (
-    <g>
-      {/* Vertikal Shaffof Gradient */}
-      <svg width={0} height={0}>
-        <defs>
-          <linearGradient id="customGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-            <stop offset="0%" stopColor="rgba(0, 144, 255, 0.4)" />
-            <stop offset="80%" stopColor="rgba(0, 144, 255, 0)" />
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <rect
-        x={cx - 10}
-        y={cy - 40}
-        width={20}
-        height={Math.max(248 - cy, 0)}
-        fill="url(#customGradient)"
-        rx="4"
-      />
-
-      <circle cx={cx} cy={cy} r={6} fill="#007BFF" />
-    </g>
-  );
-};
-
-export default CustomActiveDot;
+export default Chart;

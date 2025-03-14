@@ -1,4 +1,4 @@
-import Chart from '@/components/Chart';
+import Chart from '@/components/chart/Chart';
 import Explanation from '@/components/Explanation';
 
 import {
