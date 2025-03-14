@@ -35,7 +35,7 @@ const News = () => {
         subtitle={'Yangiliklar'}
         description={"Bu yerda ta'limga oid so'ngi yanligilkar"}
       />
-      <div className="grid grid-cols-3 gap-8 mt-16 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 mb-12">
         {data.map((item, index) => (
           <UIcard
             key={index}
