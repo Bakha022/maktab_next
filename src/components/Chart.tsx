@@ -5,6 +5,7 @@ import {
   LineChart,
   ResponsiveContainer,
   Tooltip,
+  TooltipProps,
   XAxis,
   YAxis,
 } from 'recharts';
@@ -66,7 +67,10 @@ const Chart = () => {
               axisLine={false}
               tickLine={false}
             />
-            <Tooltip cursor={false} content={<CustomTooltip />} />
+            <Tooltip
+              cursor={false}
+              content={props => <CustomTooltip {...props} />}
+            />
 
             <Line
               type="monotone"
@@ -83,7 +87,10 @@ const Chart = () => {
   );
 };
 
-const CustomTooltip = ({ active, payload }) => {
+const CustomTooltip: React.FC<TooltipProps<number, string>> = ({
+  active,
+  payload,
+}) => {
   if (active && payload && payload.length) {
     return (
       <div
@@ -95,9 +102,6 @@ const CustomTooltip = ({ active, payload }) => {
           textAlign: 'center',
         }}
       >
-        {/* <p className="text-[#C7C7C7] text-sm font-normal font-inter leading-5">
-          15 Aug 2022
-        </p> */}
         <p className="text-[12px] font-inter font-semibold leading-4.5 text-white">
           {payload[0].value.toLocaleString()} foydalanuvchi
         </p>
