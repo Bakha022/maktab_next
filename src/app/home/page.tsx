@@ -1,3 +1,4 @@
+import Contact from '@/containers/Contact';
 import Header from '@/containers/Header';
 import News from '@/containers/News';
 import Statstic from '@/containers/Statstic';
@@ -10,6 +11,7 @@ const HomePage = () => {
       <News />
       <Statstic />
       <UsefulLinks />
+      <Contact />
     </div>
   );
 };
