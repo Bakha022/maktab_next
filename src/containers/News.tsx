@@ -29,7 +29,7 @@ const data = [
 
 const News = () => {
   return (
-    <div className="my-20">
+    <div id='news' className="my-20">
       <Explanation
         title={'Yangiliklar bilan tanishing'}
         subtitle={'Yangiliklar'}
@@ -47,7 +47,7 @@ const News = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <Link href={'/'}>
+        <Link href={'/news'}>
           <Button className="text-white transition duration-200 bg-[#00359E] hover:bg-[#00359ee9]">
             Barchasi
           </Button>

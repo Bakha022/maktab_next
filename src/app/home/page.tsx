@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer';
+import Footer from '@/layouts/components/Footer';
 import Contact from '@/containers/Contact';
 import Header from '@/containers/Header';
 import News from '@/containers/News';

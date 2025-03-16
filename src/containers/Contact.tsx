@@ -25,7 +25,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="my-20">
+    <div id='contact' className="my-20">
       <Explanation
         title={'Biz bilan boglaning'}
         subtitle={'Kontaktimiz'}

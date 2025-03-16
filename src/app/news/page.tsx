@@ -1,7 +1,7 @@
-import React from 'react';
+import { AppLayout } from '@/layouts/AppLayout';
 
 const NewsPage = () => {
-  return <div>NewsPage</div>;
+  return <AppLayout>NewsPage</AppLayout>;
 };
 
 export default NewsPage;
