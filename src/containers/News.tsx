@@ -29,7 +29,7 @@ const data = [
 
 const News = () => {
   return (
-    <div className="my-16">
+    <div className="my-20">
       <Explanation
         title={'Yangiliklar bilan tanishing'}
         subtitle={'Yangiliklar'}

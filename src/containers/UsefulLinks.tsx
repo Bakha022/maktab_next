@@ -44,7 +44,7 @@ const UsefulLinks = () => {
     },
   ];
   return (
-    <div className="my-16">
+    <div className="my-20">
       <Explanation
         title={'Siz uchun yangi havolalar'}
         subtitle={'Foydali havolalar'}

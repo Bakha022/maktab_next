@@ -18,7 +18,6 @@ const UsefulLinkContent = ({
   left,
   img,
 }: IProp) => {
-  console.log(left);
 
   return (
     <div className="grid grid-cols-1 tablet:grid-cols-2 gap-10 tablet:gap-16 justify-between items-center mt-10 tablet:mt-[96px] grid-flow-dense">
