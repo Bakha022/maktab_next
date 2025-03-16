@@ -33,8 +33,8 @@ const Contact = () => {
           'Bizning do’stona jamoamiz sizni barcha savollaringizga tezda javob beradi'
         }
       />
-      <div className="grid grid-cols-3 gap-16 mt-16">
-        <div className="col-span-1">
+      <div className="block tablet:grid tablet:grid-cols-3 gap-12 tablet:gap-16 mt-16">
+        <div className="tablet:col-span-1">
           {data.map((item, key) => (
             <ContactList
               key={key}
