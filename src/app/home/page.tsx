@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Contact from '@/containers/Contact';
 import Header from '@/containers/Header';
 import News from '@/containers/News';
@@ -6,13 +7,16 @@ import UsefulLinks from '@/containers/UsefulLinks';
 
 const HomePage = () => {
   return (
-    <div className="container">
-      <Header />
-      <News />
-      <Statstic />
-      <UsefulLinks />
-      <Contact />
-    </div>
+    <>
+      <div className="container">
+        <Header />
+        <News />
+        <Statstic />
+        <UsefulLinks />
+        <Contact />
+      </div>
+      <Footer />
+    </>
   );
 };
 
