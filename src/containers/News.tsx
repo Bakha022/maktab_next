@@ -29,7 +29,7 @@ const data = [
 
 const News = () => {
   return (
-    <div id='news' className="my-20">
+    <div id="news" className="my-20">
       <Explanation
         title={'Yangiliklar bilan tanishing'}
         subtitle={'Yangiliklar'}
