@@ -1,5 +1,5 @@
 import UsefulLinkContent from '@/components/contents/UsefulLinkContent';
-import Explanation from '@/components/Explanation';
+import Explanation from '@/components/Titles/Explanation';
 
 const UsefulLinks = () => {
   const data = [
@@ -44,7 +44,7 @@ const UsefulLinks = () => {
     },
   ];
   return (
-    <div id='links' className="my-20">
+    <div id="links" className="my-20">
       <Explanation
         title={'Siz uchun yangi havolalar'}
         subtitle={'Foydali havolalar'}

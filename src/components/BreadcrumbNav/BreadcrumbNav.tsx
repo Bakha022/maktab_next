@@ -7,7 +7,11 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 
-const BreadcrumbNav = () => {
+interface IProp {
+  text: string;
+}
+
+const BreadcrumbNav = ({ text }: IProp) => {
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -21,7 +25,9 @@ const BreadcrumbNav = () => {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage className="font-inter font-medium text-sm leading-5 text-blue-900">Barcha yangiliklar</BreadcrumbPage>
+          <BreadcrumbPage className="font-inter font-medium text-sm leading-5 text-blue-900">
+            {text}
+          </BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

@@ -1,6 +1,6 @@
 import Map from '@/components/cards/Map';
-import Explanation from '@/components/Explanation';
 import ContactList from '@/components/lists/ContactList';
+import Explanation from '@/components/Titles/Explanation';
 
 const Contact = () => {
   const data = [
@@ -25,7 +25,7 @@ const Contact = () => {
   ];
 
   return (
-    <div id='contact' className="my-20">
+    <div id="contact" className="my-20">
       <Explanation
         title={'Biz bilan boglaning'}
         subtitle={'Kontaktimiz'}

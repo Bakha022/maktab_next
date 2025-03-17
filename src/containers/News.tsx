@@ -1,5 +1,5 @@
 import UIcard from '@/components/cards/UIcard';
-import Explanation from '@/components/Explanation';
+import Explanation from '@/components/Titles/Explanation';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -43,6 +43,7 @@ const News = () => {
             title={item.title}
             subtitle={item.subtitle}
             data={item.data}
+            link={index}
           />
         ))}
       </div>

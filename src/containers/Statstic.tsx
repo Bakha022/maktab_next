@@ -1,5 +1,5 @@
 import Chart from '@/components/chart/Chart';
-import Explanation from '@/components/Explanation';
+import Explanation from '@/components/Titles/Explanation';
 
 import {
   Select,
@@ -11,7 +11,7 @@ import {
 
 const Statstic = () => {
   return (
-    <div id='statistika' className="my-20 flex flex-col gap-10 sm:gap-16">
+    <div id="statistika" className="my-20 flex flex-col gap-10 sm:gap-16">
       <Explanation
         title={'Bizni aniq sonlarimiz bilan tanishing'}
         subtitle={'Statistika'}

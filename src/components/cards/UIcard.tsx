@@ -6,11 +6,12 @@ interface IProp {
   title: string;
   subtitle: string;
   data: string;
+  link: number;
 }
-const UIcard = ({ img, title, subtitle, data }: IProp) => {
+const UIcard = ({ img, title, subtitle, data, link }: IProp) => {
   return (
     <div>
-      <Link href={'/'}>
+      <Link href={`/news/${link}`}>
         <Image
           className="w-full"
           height={164}
