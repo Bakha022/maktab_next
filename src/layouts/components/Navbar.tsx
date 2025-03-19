@@ -62,9 +62,9 @@ const Navbar = () => {
       </ul>
       <div className="flex gap-4 tablet:gap-6 items-center">
         <LanguageDropDown />
-        <Link className="hidden tablet:block" href={''}>
+        <Link className="hidden tablet:block" href={'https://id.egov.uz/'}>
           <Button className="text-white transition duration-200 bg-[#00359E] hover:bg-[#00359ee9]">
-            Krish
+            Kirish
           </Button>
         </Link>
         <Menu
@@ -124,9 +124,9 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <Link href={''}>
+          <Link href={'https://id.egov.uz/'}>
             <Button className="text-white w-full mb-[45px] transition duration-200 bg-[#00359E] hover:bg-[#00359ee9]">
-              Krish
+              Kirish
             </Button>
           </Link>
         </div>
